@@ -1,0 +1,76 @@
+:root {
+  --purple: #3B1D5A;
+  --blue: #1E4FA3;
+  --teal: #1AA6B7;
+  --lime: #B6D800;
+  --bg: #070a12;
+  --text: rgba(255,255,255,.9);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: linear-gradient(180deg, var(--bg), #0b1020);
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.topbar {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--purple), var(--teal));
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.2);
+  color: white;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, var(--lime), var(--teal));
+  color: #0b1020;
+  border: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+  font-size: 13px;
+  opacity: .6;
+}
